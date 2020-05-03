@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Fredoka One', cursive;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(./media/cover.jpg) no-repeat;
+  background-size: cover;
+}
+
+.contact-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-info .card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  margin: 30px;
+  background-color: #6a89cc;
+  max-width: 300px;
+  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.contact-info .card:hover .fas {
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  opacity: 0;
+}
+
+.contact-info .card:hover .card-content h3 {
+  opacity: 1;
+  top: 45px;
+  -webkit-transition: .5s linear .5s;
+  transition: .5s linear .5s;
+}
+
+.contact-info .card:hover .card-content span {
+  opacity: 1;
+  bottom: 45px;
+  -webkit-transition: .5s linear .5s;
+  transition: .5s linear .5s;
+}
+
+.contact-info .card .fas {
+  font-size: 30px;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+.contact-info .card .card-content h3 {
+  position: absolute;
+  opacity: 0;
+  top: 15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.contact-info .card .card-content span {
+  position: absolute;
+  opacity: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 15px;
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+}
+
+@media screen and (max-width: 897.98px) {
+  .contact-info .card {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 500px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
